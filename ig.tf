@@ -6,4 +6,5 @@ resource "aws_internet_gateway" "igw1" {
      Env ="${var.Env}"
      Dept = "${var.Dept}"
      Created_by = "${var.Created_by}"
+    }
 }
