@@ -3,7 +3,7 @@ resource "aws_key_pair" "developer" {
   public_key ="${file("~/.ssh/id_rsa.pub")}"
 }
 
-resource "aws_key_pair" "devoloper" {
-  key_name   = "devoloper"
+resource "aws_key_pair" "devoloper2" {
+  key_name   = "devoloper2"
   public_key ="${file("~/.ssh/id_rsa.pub")}"
 }
