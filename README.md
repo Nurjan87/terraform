@@ -1,2 +1,2 @@
 # terraform
-terraform apply --var-file=environment/dev.ftvars
+terraform apply --var-file=environment/dev.tfvars
