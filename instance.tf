@@ -1,13 +1,13 @@
 resource "aws_instance" "web" {
-  ami = "ami-02bcbb802e03574ba"
-  instance_type = "t2.micro"
+  ami = "${var.ami}"
+  instance_type = "${var.instance_type}"
   subnet_id = "subnet-09cf050f2291537b9"
-  count = 5
-  key_name = "${aws_key_pair.deployer.key_name}"
+  count = "${var.count}"
+  key_name = "${var.key_name}"
  tags {
-     Name = "terraform-january-nurjan"
-     Env ="dev"
-     Dept = "IT"
-     Create_by = "Nurjan"
+     Name = "terraform-january-nurjan-${var.Create_by}-${count.index +1}"
+     Env ="${var.Env}"
+     Dept = "${var.Dept}"
+     Create_by = "${var.Created_by}"
 }
 }
