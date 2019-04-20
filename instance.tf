@@ -4,5 +4,4 @@ resource "aws_instance" "web" {
   subnet_id = "subnet-09cf050f2291537b9"
   count = "${var.count}"
   key_name = "${var.key_name}"
- 
 }
