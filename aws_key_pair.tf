@@ -1,9 +1,9 @@
-resource "aws_key_pair" "deployer" {
-  key_name   = "deployer"
+resource "aws_key_pair" "developer" {
+  key_name   = "devoloper"
   public_key ="${file("~/.ssh/id_rsa.pub")}"
 }
 
-resource "aws_key_pair" "deployer2" {
-  key_name   = "deployer2"
+resource "aws_key_pair" "devoloper" {
+  key_name   = "devoloper"
   public_key ="${file("~/.ssh/id_rsa.pub")}"
 }
