@@ -18,6 +18,3 @@ variable "db_desired_capacity" {}
 
 variable "db_ami"  {}
 variable "db_instance_type" {}
- 
-
-
