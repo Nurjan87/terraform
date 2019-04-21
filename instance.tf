@@ -6,10 +6,10 @@ resource "aws_instance" "web" {
   key_name = "${var.key_name}"
   subnet_id = "${aws_subnet.dev1.id}"
   associate_public_ip_address = "true"
-  vpc_security_group_ids = ["${aws_security_group.allow_ssh.id}"]
+  vpc_security_group_ids = ["${aws_secureity_group.allow_ssh.subnet_id}"]
 
     tags {
-     Name = "terraform-${var.Created_by}-${count.index +1}"
+     Name = "${var.appname}-${var.Created_by}-${count.index +1}"
      Env ="${var.Env}"
      Dept = "${var.Dept}"
      Created_by = "${var.Created_by}"
