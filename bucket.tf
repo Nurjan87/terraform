@@ -1,11 +1,10 @@
-resource "aws_s3_bucket" "newbucket12" {
-  bucket = "terraform-january-nurjan12"
-  region = "us-east-2"
-   
+resource "aws_s3_bucket" "newbucket" {
+  bucket = "terraform-january-nurjan"
+
   tags {
-     Name = "terraform-january-nurjan"
-     Env ="dev"
-     Dept = "IT"
-     Create_by = "Nurjan"
+     Name = "terraform-january-nurjan" 
+     Env  = "dev" 
+     Dept = "IT" 
+     Created_by = "nurjan"
   }
 }
