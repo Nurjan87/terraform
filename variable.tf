@@ -1,4 +1,4 @@
-variable "ami"  {}
+variable "ami" {}
 variable "instance_type" {}
 variable "count" {}
 variable "key_name" {}
@@ -16,5 +16,5 @@ variable "db_min_size" {}
 variable "db_max_size" {}
 variable "db_desired_capacity" {}
 
-variable "db_ami"  {}
+variable "db_ami" {}
 variable "db_instance_type" {}
